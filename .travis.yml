@@ -8,6 +8,8 @@ matrix:
        - chmod +x build.sh
       script: ./build.sh
     - language: node_js
+      node_js:
+       - "11.0"
       before_install:
        - chmod +x ./TravisDemo/build.sh
        - npm install -g @angular/cli
