@@ -2,12 +2,12 @@ sudo: required
 matrix:
   include:
     - language: java
-      before_script: 
+      before_install: 
        - chmod +x mvnw
        - chmod +x build.sh
       script: ./build.sh
     - language: node_js
-      before_script:
+      before_install:
        - chmod +x ./TravisDemo/build.sh
        - npm install -g @angular/cli
       script: ./TravisDemo/build.sh
