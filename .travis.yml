@@ -14,4 +14,4 @@ matrix:
        - chmod +x ./TravisDemo/build.sh
        - npm install -g @angular/cli
        - cd ./TravisDemo
-      script: ./TravisDemo/build.sh
+      script: ./build.sh
