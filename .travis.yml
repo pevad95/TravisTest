@@ -1,12 +1,13 @@
 matrix:
- include:
-    - language: java
+    include:
+        - language: java
         before_script:
             - chmod +x mvnw
             - chmod +x build.sh
   
         script: ./build.sh
-    - language: node_js
+        
+        - language: node_js
         node_js:
             - "11.0"
         before_script:
