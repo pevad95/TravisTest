@@ -1,12 +1,13 @@
-jobs:
+sudo: required
+matrix:
   include:
-    -language: java
-    before_script: 
-     -chmod +x mvnw
-     -chmod +x build.sh
-    script: ./build.sh
-    -language: node_js
-    before_script:
-     - chmod +x ./TravisDemo/build.sh
-     - npm install -g @angular/cli
-    script: ./TravisDemo/build.sh
+    - language: java
+      before_script: 
+       - chmod +x mvnw
+       - chmod +x build.sh
+      script: ./build.sh
+    - language: node_js
+      before_script:
+       - chmod +x ./TravisDemo/build.sh
+       - npm install -g @angular/cli
+      script: ./TravisDemo/build.sh
